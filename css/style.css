@@ -1,0 +1,76 @@
+
+html{
+  font-size: 62.5%;/**rems ajuste 10px = 1rem**/
+}
+body{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.8rem;
+}
+/**globales**/
+h1{
+  font-size: 3.8rem;
+}
+h2{
+  font-size: 3.4rem;
+}
+h3{
+  font-size: 3rem;
+}
+.contenedor{
+  max-width: 120rem;
+  margin: 0 auto;
+}
+/**utilidades**/
+.seccion{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+/**header**/
+.site-header.inicio{
+  background-image: url(../img/header.jpg);
+  background-position: center;
+  background-size: cover;/**fuerza el ajuste de la imagen sin perder proporciones**/
+  height: 100vh; /**toma el 100% de la pantalla y ajusta la imagen**/
+  min-height: 60rem; /**el minimo ancho de la imagen**/
+}
+.contenido-header{
+  height: 100%; /**para que tome el 100% del espacio vertical**/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contenido-header h1{
+  color: white;
+  padding-bottom: 2rem;
+  max-width: 60rem;
+  line-height: 4rem;
+
+}
+.barra{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 3rem;
+}
+/**navegacion**/
+.navegacion a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+  margin-right: 2rem;
+}
+.navegacion a:hover{
+  color: gray;
+}
+.navegacion a:last-of-type{
+  margin: 0;
+}
+/**iconos nosotros**/
+.icono-nosotros{
+  display: flex;
+  justify-content: space-between;
+}
+.icono{
+  flex-basis: calc(33.3% - 1rem);
+  text-align: center;
+}
