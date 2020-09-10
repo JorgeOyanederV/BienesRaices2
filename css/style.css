@@ -83,6 +83,10 @@ h3 {
   min-height: 60rem;
   /**el minimo ancho de la imagen**/
 }
+.site-header{
+  background-color: rgba(0, 0, 0, 0.79);
+  padding: 2rem 0 3rem 0;
+}
 
 .contenido-header {
   height: 100%;
@@ -296,4 +300,13 @@ h3 {
 .contenedor.contenedor-footer p{
   margin: 0;
   color: white;
+}
+.contenido-nosotros{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+}
+.texto-nosotros blockquote{
+  font-weight: 900;
+  margin-left: 0;
 }
