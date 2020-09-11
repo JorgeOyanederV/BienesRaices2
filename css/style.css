@@ -64,8 +64,11 @@ h3 {
   padding: 1rem 3rem;
   display: inline-block;
   margin-top: 3rem;
+  border: none;
 }
-
+.boton:hover{
+  cursor: pointer;
+}
 .boton-amarillo {
   background-color: rgb(228, 157, 49);
 }
@@ -338,8 +341,19 @@ h3 {
 }
 
 /**contacto**/
+.contacto p{
+  font-size: 1.5rem;
+  color: #4f4f4f;
+  margin: 0;
+}
+legend{
+  font-size: 2.4rem;
+  color: #333333;
+}
 label {
   display: block;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 /**input[type="text"], input[type="email"], input[type="tel"]{
   width: 100%;
@@ -367,4 +381,17 @@ select {
   margin-bottom: 1rem;
   margin-top: 1rem;
   border-radius: 1rem;
+}
+textarea {
+  height: 20rem;
+}
+.forma-contacto{
+  max-width: 30rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.comida{
+  display: flex;
+  flex-direction: row-reverse;
 }

@@ -31,7 +31,7 @@
 
   <main class="contenedor seccion contenido-centrado">
     <h2 class="fw300 centrar-texto">Llenar formulario de contacto</h2>
-    <form action="">
+    <form class="contacto">
       <fieldset>
         <legend>Informacion Personal</legend>
         <label for="nombre">Nombre:</label>
@@ -64,18 +64,20 @@
       <fieldset>
         <legend>Contacto</legend>
         <p>Como desea ser contactado</p>
+        <div class="forma-contacto">
+          <label for="telefono">Telefono</label>
+          <input type="radio" name="contacto" value="telefono" id="telefono">
 
-        <label for="telefono">Telefono</label>
-        <input type="radio" name="contacto" value="telefono" id="telefono">
-
-        <label for="email">Email</label>
-        <input type="radio" name="contacto" value="correo" id="correo">
+          <label for="email">Email</label>
+          <input type="radio" name="contacto" value="correo" id="correo">
+        </div>
 
         <p>Elija del Menu</p>
-        <input type="checkbox" name="orden" value="hamburguesa"> hamburguesa
-        <input type="checkbox" name="orden" value="papas"> papas
-        <input type="checkbox" name="orden" value="cerbeza"> cerbeza
-
+        <div class="comida">
+          <input type="checkbox" name="orden" value="hamburguesa"> hamburguesa
+          <input type="checkbox" name="orden" value="papas"> papas
+          <input type="checkbox" name="orden" value="cerbeza"> cerbeza
+        </div>
         <p>Si eligio Telefono, elija una fecha y la hora</p>
         <label for="fecha">Fecha:</label>
         <input type="date" id="fecha">
@@ -84,9 +86,8 @@
         <input type="time" id="hora" min="09:00" max="21:00">
 
       </fieldset>
-      <input type="submit" value="Enviar"> <<!--se le pueden aplicar classes a esto tambien-->
-
-
+      <input type="submit" value="Enviar" class="boton boton-verde">
+      <!--se le pueden aplicar classes a esto tambien-->
     </form>
   </main>
 
