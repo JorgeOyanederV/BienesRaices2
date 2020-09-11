@@ -52,7 +52,9 @@ h3 {
 .d-block {
   display: block !important;
 }
-
+.contenido-centrado{
+  max-width: 80rem;
+}
 /**botones**/
 .boton {
   color: white;
@@ -83,7 +85,8 @@ h3 {
   min-height: 60rem;
   /**el minimo ancho de la imagen**/
 }
-.site-header{
+
+.site-header {
   background-color: rgba(0, 0, 0, 0.79);
   padding: 2rem 0 3rem 0;
 }
@@ -145,14 +148,19 @@ h3 {
 .contenedor-anuncios {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .anuncio {
+  flex-grow: 0;
+  flex-shrink: 0;
   flex-basis: calc(33.3% - 1rem);
+  /*flex: 0 0 calc(33.3% - 1rem);*/
   border-style: solid;
   border-color: white;
   border-width: 0.1rem;
   background-color: rgb(237, 237, 237);
+  margin-bottom: 2rem;
 }
 
 .contenido-anuncio {
@@ -162,10 +170,12 @@ h3 {
 .contenido-anuncio h3 {
   margin: 0;
 }
+
 .contenido-anuncio p {
   line-height: 3.5rem;
   margin-top: 2rem;
 }
+
 .precio {
   color: green;
   font-weight: 700;
@@ -176,6 +186,8 @@ h3 {
   padding: 0;
   display: flex;
   justify-content: space-evenly;
+  max-width: 50%;
+  flex: 1;
 }
 
 .iconos-caracteristicas li {
@@ -264,17 +276,19 @@ h3 {
 }
 
 /*testo,pmoa;*/
-.testimonial{
+.testimonial {
   background-color: green;
   font-size: 2.4rem;
   padding: 2rem;
   color: white;
   border-radius: 2rem;
 }
-.testimonial p{
+
+.testimonial p {
   text-align: right;
 }
-.testimonial blockquote::before{
+
+.testimonial blockquote::before {
   content: '';
   background-image: url(../img/comilla.svg);
   width: 5rem;
@@ -283,30 +297,74 @@ h3 {
   left: -2rem;
   top: -2rem;
 }
-.testimonial blockquote{
+
+.testimonial blockquote {
   position: relative;
   padding-left: 5rem;
 }
-.site-footer{
+
+.site-footer {
   background-color: gray;
   margin: 0;
 }
-.contenedor-footer{
+
+.contenedor-footer {
   padding: 2rem 0;
   display: flex;
   justify-content: space-between;
-
 }
-.contenedor.contenedor-footer p{
+
+.contenedor.contenedor-footer p {
   margin: 0;
   color: white;
 }
-.contenido-nosotros{
+/**paginas internas**/
+/**nosotros**/
+.contenido-nosotros {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 2rem;
 }
-.texto-nosotros blockquote{
+
+.texto-nosotros blockquote {
   font-weight: 900;
   margin-left: 0;
+}
+/**anuncio**/
+.resumen-propiedad{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/**contacto**/
+label {
+  display: block;
+}
+/**input[type="text"], input[type="email"], input[type="tel"]{
+  width: 100%;
+  padding: 1rem;
+  background-color: #e1e1e1;
+  border: none;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}**/
+input:not([type="submit"]), textarea{
+  width: 100%;
+  padding: 1rem;
+  background-color: #e1e1e1;
+  border: none;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+select {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #e1e1e1;
+  border: none;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
 }
