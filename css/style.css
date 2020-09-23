@@ -131,6 +131,7 @@ h3 {
 
 .barra {
   padding-top: 3rem;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -394,12 +395,16 @@ h3 {
 
 /**paginas internas**/
 /**nosotros**/
-.contenido-nosotros {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 2rem;
+.contenido-nosotros p{
+  text-align: justify;
 }
-
+@media (min-width: 768px) {
+  .contenido-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+  }
+}
 .texto-nosotros blockquote {
   font-weight: 900;
   margin-left: 0;
